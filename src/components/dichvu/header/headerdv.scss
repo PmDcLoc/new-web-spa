@@ -1,0 +1,28 @@
+.banner {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .textdv {
+        text-align: center;
+        color: white; /* Màu chữ trắng để nổi bật trên nền */
+        max-width: 800px;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.5); /* Làm mờ nền để dễ đọc chữ */
+        border-radius: 10px;
+
+        h1 {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+    }
+}

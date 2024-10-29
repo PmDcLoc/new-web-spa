@@ -1,0 +1,66 @@
+.invoice-detail-container {
+    max-width: 600px; /* Giới hạn chiều rộng */
+    margin: 20px auto; /* Canh giữa */
+    padding: 20px; /* Padding cho container */
+    border-radius: 10px; /* Bo góc */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+    background-color: #fff; /* Màu nền trắng */
+    font-family: 'Arial', sans-serif; /* Font chữ */
+  }
+  
+  .invoice-header {
+    text-align: center; /* Canh giữa tiêu đề */
+    margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
+  }
+  
+  .invoice-header h2 {
+    font-size: 24px; /* Kích thước font */
+    color: #333; /* Màu chữ */
+  }
+  
+  .invoice-body {
+    margin-bottom: 20px; /* Khoảng cách dưới nội dung */
+  }
+  
+  .customer-info, .service-info {
+    background-color: #f9f9f9; /* Nền nhẹ cho các phần thông tin */
+    border-radius: 8px; /* Bo góc */
+    padding: 15px; /* Padding */
+    margin-bottom: 10px; /* Khoảng cách giữa các phần */
+    border-left: 5px solid #4CAF50; /* Đường viền bên trái màu xanh lá */
+  }
+  
+  .customer-info p, .service-info p {
+    margin: 5px 0; /* Khoảng cách giữa các đoạn văn */
+    color: #555; /* Màu chữ nhạt hơn */
+  }
+  
+  .status {
+    font-weight: bold; /* Chữ đậm cho trạng thái */
+  }
+  
+  .paid {
+    color: #4CAF50; /* Màu xanh lá cho trạng thái đã thanh toán */
+  }
+  
+  .unpaid {
+    color: #f44336; /* Màu đỏ cho trạng thái chưa thanh toán */
+  }
+  
+  .back-button {
+    display: block; /* Để nút chiếm toàn bộ chiều ngang */
+    width: 100%; /* Chiều rộng 100% */
+    padding: 10px; /* Padding */
+    border: none; /* Bỏ viền */
+    border-radius: 5px; /* Bo góc */
+    background-color: #007BFF; /* Màu nền cho nút */
+    color: white; /* Màu chữ trắng */
+    font-size: 16px; /* Kích thước chữ */
+    cursor: pointer; /* Con trỏ chuột */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu */
+  }
+  
+  .back-button:hover {
+    background-color: #0056b3; /* Màu khi hover */
+  }
+  

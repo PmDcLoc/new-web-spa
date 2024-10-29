@@ -1,0 +1,58 @@
+.gtsp {
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* Giữ nguyên tỷ lệ và toàn bộ ảnh nằm gọn trong vùng */
+  background-position: center;
+  filter: brightness(10px);
+  /* Điều chỉnh độ mờ */
+}
+
+.overlaygt {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 313px;
+  background-color: rgba(70, 46, 30, 0.5);
+  /* Màu nâu (saddle brown) với độ mờ 50% */
+  z-index: 1;
+  /* Đặt lớp phủ lên trên ảnh */
+}
+.tt7b {
+  margin-top: -100px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: bold;
+  position: relative;
+  z-index: 3;
+  left: 40%;
+  
+}
+.image-gallery-container {
+  display: grid;
+  gap: 30px; /* Khoảng cách giữa các ô */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  max-width: 1200px; /* 4 cột tối đa (4 x 200px) */
+  margin: 0 auto; /* Căn giữa container */
+  padding: 30px; // Thêm không gian cho phần đệm
+  padding-top: 60px;
+
+  .image-item {
+    overflow: hidden; // Đảm bảo ảnh không bị tràn
+    border-radius: 12px; // Góc bo tròn mềm mại hơn
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); // Hiệu ứng đổ bóng đẹp hơn
+    transition: transform 0.3s ease, box-shadow 0.3s ease; // Hiệu ứng khi hover
+
+    &:hover {
+      transform: scale(1.05); // Phóng to nhẹ khi di chuột vào
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); // Đổ bóng đậm hơn khi hover
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; // Đảm bảo ảnh không bị biến dạng
+      display: block;
+    }
+  }
+}

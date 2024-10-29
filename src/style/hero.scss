@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.hero {
+    padding-left: 10%;
+    padding-right: 10%;
+    margin: 80px 0;
+
+
+    .text_hero {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 600;
+        padding: 20px;
+        margin: 70px 0px 50px;
+        position: relative;
+        // font-family: 'Material Icons';
+        // font-family: "Montserrat", sans-serif;
+        font-size: 35px;
+
+    }
+
+    .text_hero::after {
+        content: '';
+        display: block;
+        width: 30%;
+        height: 1px;
+        background-color: #f08080;
+        margin: 10px auto;
+        position: relative;
+        margin: 20px auto;
+    }
+
+    .text_hero::before {
+
+        content: '✿';
+
+        display: block;
+        font-size: 30px;
+        color: #f08080;
+        margin: 10px auto;
+        position: absolute;
+        left: 49.4%;
+        bottom: -5px;
+
+    }
+
+    .main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+
+
+        img {
+            width: 100%;
+            border-radius: 10px 10px 0px 0px;
+            height: 200px;
+            display: block;
+        }
+
+
+
+
+        .main2 {
+            flex-basis: 28%;
+            border: none;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 10px 15px;
+            height: 400px;
+
+            .text_main {
+                text-align: center;
+                margin: 10px 20px;
+                line-height: 23px;
+
+                h3 {
+                    color: #555;
+                    font-size: 16px;
+                }
+
+                p {
+                    font-size: 15px;
+                    color: #202020;
+                }
+
+
+
+                a {
+                    color: #969696;
+                    border-bottom: 1px solid #969696;
+                }
+            }
+        }
+
+        .main2:hover {
+            padding: 0px 0px 400px 0px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 10px 8px;
+            border-bottom: 3px solid rgba(139, 6, 6, 0.541);
+            transition: 0.2s;
+            
+            transform: scale(1.1); /* Tăng kích thước 10% */
+
+            a:hover {
+                color: black;
+            }
+         
+         
+        }
+    }
+    
+}

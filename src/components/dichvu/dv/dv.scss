@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Ingrid+Darling&display=swap');
+
+
+.anhnendv {
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* Giữ nguyên tỷ lệ và toàn bộ ảnh nằm gọn trong vùng */
+    background-position: center;
+    filter: brightness(10px);
+    /* Điều chỉnh độ mờ */
+  }
+  
+  .overlaygt {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 313px;
+    background-color: rgba(70, 46, 30, 0.5);
+    /* Màu nâu (saddle brown) với độ mờ 50% */
+    z-index: 1;
+    /* Đặt lớp phủ lên trên ảnh */
+  }
+  .dvtb {
+    margin-top: -100px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+    z-index: 3;
+    left: 32%;
+    
+  }
+.dv {
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-top: 50px;
+
+    .dv-text {
+        text-align: center;
+        padding: 20px 0px;
+        margin-bottom: 80px;
+        position: relative;
+
+        p {
+            font-family: "Ingrid Darling", cursive;
+            font-weight: 500;
+            font-size: 35px;
+            color: #a88047;
+        }
+
+        .text-dv {
+            font-size: 2rem;
+            color: #3D3935;
+
+        }
+
+        .text-dv::after {
+            content: '';
+            display: block;
+            width: 30%;
+            height: 1px;
+            background-color: #f08080;
+            margin: 10px auto;
+            position: relative;
+            margin: 20px auto;
+        }
+
+        .text-dv::before {
+            content: '✿';
+            display: block;
+            font-size: 30px;
+            color: #f08080;
+            margin: 10px auto;
+            position: absolute;
+            left: 49.4%;
+            bottom: -10px;
+
+        }
+
+    }
+
+    .dv-container {
+        border: 1px solid black;
+        width: 100%;
+        height: auto;
+        margin-top: -50px;
+
+
+        .dv-main {
+            background-color: #a59c95;
+            text-align: center;
+
+            h2 {
+                font-size: 30px;
+                padding: 20px 0px;
+            }
+        }
+    }
+
+    .list {
+        width: 100%;
+        height: auto;
+
+    }
+
+
+
+
+}

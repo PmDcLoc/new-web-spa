@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.banner1 {
+    width: 100%;
+    padding-top: 50px;
+    height: auto;
+    background-color: #ffffff;
+    height: 355px;
+    position: relative;
+    text-align: center;
+
+    img {
+        margin: 0px 0px;
+        width: 100%;
+    }
+
+    .text-bn {
+        margin-top: -270px;
+        text-align: center;
+        line-height: 50px;
+
+        h2 {
+            color: #000000;
+            font-size: 50px;
+            font-weight: bold;
+            
+            padding: 20px 0px;
+            margin-bottom: 40px;
+            font-family: "Playfair Display", serif;
+        }
+
+        .btn {
+
+            padding: 10px 20px;
+            color: rgb(238, 255, 0);
+            position: relative;
+            font-size: 20px;
+            background: transparent;
+            display: inline-block;
+            padding: 10px 0px;
+            z-index: 2;
+        }
+
+        .btn:hover {
+            color: white;
+        }
+
+        .btn::after {
+            content: "";
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            border-radius: 3px;
+            position: absolute;
+            transform: scaleX(0);
+            bottom: 0;
+            left: -20px;
+            z-index: -1;
+            transition: all 0.4s ease-in-out;
+            padding: 0px 20px;
+            text-align: center;
+        }
+
+        .btn:hover::after {
+            transform: scaleX(1);
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+
+    }
+}

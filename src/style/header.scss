@@ -1,0 +1,73 @@
+.content {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(77, 36, 2, 0.4), rgba(77, 36, 2, 0.7)), url(../assets/imaage/dratap.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10%;
+
+
+    .text {
+
+        color: #F5F5DC;
+        max-width: 800px;
+        text-align: center;
+
+        h2 {
+            font-size: 80px;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .sale {
+            border: 1px solid rgba(128, 85, 21, 0.925);
+            border-radius: 5px;
+            display: inline-block;
+            padding: 10px;
+            margin: 10px 120px;
+            background-color: #704727;
+
+            span {
+                font-size: 20px;
+                color: rgb(229, 255, 0);
+            }
+        }
+
+        h3 {
+            font-size: 80px;
+            text-align: center;
+            color: #F5F5DC;
+            margin-bottom: 10px;
+        }
+
+
+
+
+        a {
+            padding: 14px 25px;
+            font-size: 17px;
+            border-radius: 30px;
+            font-weight: 500;
+            border: 1px solid #D3B5A3;
+            color: #3D3935;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: #D3B5A3;
+            transition: 0.3s;
+        }
+
+        a:hover {
+            color: #D3B5A3;
+            border: 1px solid #D3B5A3;
+            background: none;
+        }
+
+
+    }
+}

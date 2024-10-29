@@ -1,0 +1,95 @@
+.anhnen {
+    background-repeat: no-repeat;
+    background-size: contain; /* Giữ nguyên tỷ lệ và toàn bộ ảnh nằm gọn trong vùng */
+    background-position: center;
+    filter:brightness(10px); /* Điều chỉnh độ mờ */
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 313px;
+    background-color: rgba(70, 46, 30, 0.5); /* Màu nâu (saddle brown) với độ mờ 50% */
+    z-index: 1; /* Đặt lớp phủ lên trên ảnh */
+}
+.td7b {
+    margin-top: -100px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+    z-index: 3;
+    margin-left: 30%;
+
+    
+}
+.nenct {
+    background-color: rgb(117, 85, 64);
+    width: 80%;
+    height: 100%;
+    position: relative;
+    left: 150px;
+    border-radius: 20px;
+    
+    top: 10px;
+    
+.titleChiTiet {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 50px;
+    color: #f08080;
+}
+
+.buoc {
+    display: flex;
+    width: 900px;
+    margin-left: 5%;
+    margin-bottom: 70px;
+    .mota {
+        margin-top: 10px;
+        p{
+            width: 500px;
+            font-size: 20px;
+            margin-top: 20px;
+            color: aliceblue;
+        }
+        .thutu {
+
+            font-weight: 500;
+            font-size: 2vw;
+        }
+    }
+    .img img{
+        width: 500px;
+        height: 300px;
+        margin-left: 50px;
+        border-radius: 15px;
+    }
+}
+.buoc1 {
+    display: flex;
+    width: 900px;
+    margin-left: 5%;
+    margin-bottom: 70px;
+    .mota1 {
+        margin-top: 10px;
+        margin-left: 100px;
+        p{
+            width: 500px;
+            font-size: 20px;
+            margin-top: 20px;
+            color: aliceblue;
+        }
+        .thutu1 {
+            font-weight: 500;
+            font-size: 2vw;
+        }
+    }
+    .img1 img{
+        width: 500px;
+        height: 300px;
+        border-radius: 15px;
+    }
+}
+}
