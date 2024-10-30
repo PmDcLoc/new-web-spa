@@ -1,8 +1,10 @@
 import './listdv.scss';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import DVCT from '../chitiet/dvct';
+import axios from 'axios';
 
 function ListDv() {
+    const [dichvulist, setdichvulist] = useState([])
     // Tạo trạng thái riêng biệt cho mỗi thẻ dịch vụ
     const [selectedService, setSelectedService] = useState(null);
 
@@ -11,9 +13,39 @@ function ListDv() {
         setSelectedService(selectedService === service ? null : service);
     };
 
+    async function handledichvu() {
+        try {
+            const res = await axios.get(`http://localhost:3000/api/dv/dichvu`);
+            setdichvulist(res.data)
+        } catch (error) {
+            console.log(error);
+        }
+    }
+    useEffect(() => {
+        handledichvu();
+    }, [])
+
     return (
         <div className="service-container">
-            <div className="service-card">
+            {dichvulist.map((dv) => (
+                <div className="service-card" key={dv.id}>
+                    <img src="https://i.pinimg.com/564x/45/2e/97/452e97514fa9d7d0221f74a2b32316d9.jpg" alt="Massage chân" />
+                    <div className="service-content">
+                        <h3>{dv.tenDichVu}</h3>
+                        <p>{dv.gia}</p>
+                        <hr />
+                        <p>{dv.moTa}</p>
+                        <hr />
+                        <div className="service-buttons">
+                            <button className="btn-call">Gọi ngay</button>
+                            <button className="btn-book" onClick={() => handleToggle('Chân')}>Đặt phòng</button>
+                        </div>
+                    </div>
+                    {selectedService === 'Chân' && <DVCT />}
+                </div>
+            )
+            )}
+            {/* <div className="service-card">
                 <img src="https://i.pinimg.com/564x/45/2e/97/452e97514fa9d7d0221f74a2b32316d9.jpg" alt="Massage chân" />
                 <div className="service-content">
                     <h3>Chân</h3>
@@ -147,7 +179,7 @@ function ListDv() {
                     </div>
                 </div>
                 {selectedService === 'Chân' && <DVCT />}
-            </div>
+            </div> */}
         </div>
     );
 }
