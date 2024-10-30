@@ -1,8 +1,12 @@
 import gtsp from '../assets/imaage/nenanh.jpg';
+import  { useEffect } from 'react';
 import '../style/room.scss';
 
 
 const Room = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+}, []);
   const images = [
    
     'https://i.pinimg.com/564x/fa/60/1b/fa601bea62f56aeae561dbf884d4e184.jpg',

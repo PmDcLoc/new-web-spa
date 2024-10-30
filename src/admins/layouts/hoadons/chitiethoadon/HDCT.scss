@@ -27,7 +27,7 @@
     border-radius: 8px; /* Bo góc */
     padding: 15px; /* Padding */
     margin-bottom: 10px; /* Khoảng cách giữa các phần */
-    border-left: 5px solid #4CAF50; /* Đường viền bên trái màu xanh lá */
+    border-left: 5px solid  rgb(132, 117, 62); /* Đường viền bên trái màu xanh lá */
   }
   
   .customer-info p, .service-info p {
@@ -40,11 +40,11 @@
   }
   
   .paid {
-    color: #4CAF50; /* Màu xanh lá cho trạng thái đã thanh toán */
+    color:  rgb(132, 117, 62); /* Màu xanh lá cho trạng thái đã thanh toán */
   }
   
   .unpaid {
-    color: #f44336; /* Màu đỏ cho trạng thái chưa thanh toán */
+    color:  rgb(255, 0, 0); /* Màu đỏ cho trạng thái chưa thanh toán */
   }
   
   .back-button {
