@@ -1,9 +1,12 @@
 import trac from '../assets/imaage/nenanh.jpg';
 import { useState } from 'react';
+import  { useEffect } from 'react';
 import '../style/check.scss';
 // import MapComponent from './views/MapComponent';
 const Checkservect = () => {
-
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     const data = [
         {
             user: "Lò Vanh Nhật",

@@ -1,7 +1,11 @@
 import lienh from '../assets/imaage/nenanh.jpg';
+import  { useEffect } from 'react';
 import '../style/lienhe.scss';
 // import MapComponent from './views/MapComponent';
 const ContactBooking = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+}, []);
   return (
     <>
       <img src={lienh} alt="" className='lienhee' />

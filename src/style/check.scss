@@ -5,6 +5,8 @@
     background-position: center;
     filter: brightness(10px);
     /* Điều chỉnh độ mờ */
+    width: 100%;
+  height: 313px;
 }
 
 .overlaygt {
@@ -34,12 +36,13 @@
     width: 80%;
     margin-left: 10%;
     padding-bottom: 50px;
+    font-weight: 10px;
 
     .farcab {
         margin-top: 50px;
         width: 100%;
         height: 300px;
-        background-color: rgb(0, 123, 110);
+        background-color:    rgb(132, 117, 62);
         border-radius: 10px;
         position: relative;
         box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
@@ -95,7 +98,7 @@
         margin-top: 50px;
         width: 100%;
         height: 100px;
-        background-color: rgb(0, 123, 110);
+        background-color: rgb(132, 117, 62);
         border-radius: 10px;
         box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
         

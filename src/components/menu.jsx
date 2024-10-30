@@ -1,9 +1,13 @@
 import gtsp from '../assets/imaage/nenanh.jpg';
+import  { useEffect } from 'react';
 import '../style/menu.scss';
 
 const GioiThieu = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+}, []);
   return (
-    <>
+    <>  
      <img src={gtsp} alt="" className='gtsp' />
      <div className="overlaygt"></div>
      <h1 className='sayhi'>XIN CHÀO</h1>

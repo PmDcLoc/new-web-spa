@@ -1,9 +1,13 @@
 /* eslint-disable react-refresh/only-export-components */
 import './dvct.scss';
+import  { useEffect } from 'react';
 import nenanh from '../../../assets/imaage/nenanh.jpg';
 
 
 function DVCT() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
         <>
@@ -46,7 +50,7 @@ function DVCT() {
                     </div>
                     <div className="buoc">
                         <div className="mota">
-                            <p className='thutu'>Bước 3: Tẩy tế bào chết (1-2 lần/tuần)</p>
+                            <p className='thutu'>Bước 3: Tẩy tế bào chết<br/> (1-2 lần/tuần)</p>
                             <p>Mục đích: Loại bỏ da chết, giúp da thông thoáng, mịn màng và dễ hấp thụ dưỡng chất.<br />
                                 Cách làm:<br />
                                 - Lấy một lượng tẩy tế bào chết vừa đủ ra tay.<br />

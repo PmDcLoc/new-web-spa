@@ -1,4 +1,4 @@
-// import GioiThieu from "./menu";
+import  { useEffect } from 'react';
 import Header from "./layout/header";
 import About from "./views/about";
 import Banner from "./views/banner";
@@ -9,6 +9,9 @@ import Hero from "./views/hero";
 
 
 function Home() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <>
             <Header />

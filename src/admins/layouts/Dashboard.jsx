@@ -16,11 +16,11 @@ const DashboardsAdmin = () => {
         <nav className={`sidebar ${nab ? 'navb' : ''}`}>
             <h2>SUN SÀ PÀAAAA</h2>
             <ul>
-                <li><NavLink className="nank" style={({ isActive }) => isActive ? activebar : {}} to='admin'>Dashboard</NavLink></li>
+                <li><NavLink className="nank" style={({ isActive }) => isActive ? activebar : {}} to=''>Dashboard</NavLink></li>
                 <li><NavLink className="nank" style={({ isActive }) => isActive ? activebar : {}} to='cust'>Khách Hàng</NavLink></li>
                 <li><NavLink className="nank" style={({ isActive }) => isActive ? activebar : {}} to='ser'>Dịch Vụ</NavLink></li>
-                <li><NavLink className="nank" style={({ isActive }) => isActive ? activebar : {}} to='sett'>Cài Đặt</NavLink></li>
                 <li><NavLink className="nank" style={({ isActive }) => isActive ? activebar : {}} to='bil'>Hóa Đơn</NavLink></li>
+                <li><NavLink className="nank" style={({ isActive }) => isActive ? activebar : {}} to='sett'>Cài Đặt</NavLink></li>
             </ul>
         </nav>
     );

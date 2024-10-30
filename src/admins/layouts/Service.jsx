@@ -157,41 +157,43 @@ const ServicesAdmin = () => {
 
 
         <h3>Danh sách Dịch Vụ Spa</h3>
-        <table>
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>Hình ảnh</th>
-              <th>Tên</th>
-              <th>Loại dịch vụ</th>
-              <th>Thời gian</th>
-              <th>Giá</th>
-              <th>Mã giảm giá</th>
-              <th>Mô tả</th>
-              <th>Trạng thái</th>
-              <th>Hành động</th>
-            </tr>
-          </thead>
-          <tbody id="service-list">
-            {servicesList.map((s) => (
-              <tr key={s.id}>
-                <td>{s.id}</td>
-                <td><img src={s.image} alt={s.name} style={{ width: '50px' }} /></td>
-                <td>{s.name}</td>
-                <td>{s.category}</td>
-                <td>{s.duration}</td>
-                <td>{s.price}</td>
-                <td>{s.discount}</td>
-                <td>{s.description}</td>
-                <td>{s.status}</td>
-                <td className="action-buttons">
-                  <button className="edit">Sửa</button>
-                  <button className="delete">Xóa</button>
-                </td>
+        <div className="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Hình ảnh</th>
+                <th>Tên</th>
+                <th>Loại dịch vụ</th>
+                <th>Thời gian</th>
+                <th>Giá</th>
+                <th>Mã giảm giá</th>
+                <th>Mô tả</th>
+                <th>Trạng thái</th>
+                <th>Hành động</th>
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+            <tbody id="service-list">
+              {servicesList.map((s) => (
+                <tr key={s.id}>
+                  <td>{s.id}</td>
+                  <td><img src={s.image} alt={s.name} /></td>
+                  <td>{s.name}</td>
+                  <td>{s.category}</td>
+                  <td>{s.duration}</td>
+                  <td>{s.price}</td>
+                  <td>{s.discount}</td>
+                  <td>{s.description}</td>
+                  <td>{s.status}</td>
+                  <td className="action-buttons">
+                    <button className="edit">Sửa</button>
+                    <button className="delete">Xóa</button>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </div>
     </>
   );

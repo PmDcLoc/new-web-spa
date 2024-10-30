@@ -69,6 +69,8 @@ body {
     /* Màu nền khi hover */
 }
 
+
+
 // ------------------------------
 .dashboard-admin {
     padding: 20px;
@@ -186,22 +188,24 @@ select {
 button:hover {
     background-color: #00978f;
 }
-
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
 }
 
-th,
-td {
+th, td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: center;
+    word-wrap: break-word;  /* Tự động xuống dòng nếu nội dung quá dài */
+    word-break: break-word; /* Đảm bảo cắt từ nếu không thể vừa dòng */
+    white-space: normal;    /* Cho phép xuống dòng bình thường */
+    max-width: 150px;       /* Giới hạn chiều rộng để dễ quản lý nội dung */
 }
 
 th {
-    background-color: #531c00;
+    background-color: rgb(132, 117, 62);
     color: white;
 }
 
@@ -233,6 +237,7 @@ td img {
     background-color: #f44336;
     color: white;
 }
+
 
 // -----------
 .form-visible {
@@ -352,7 +357,7 @@ td img {
       }
   
       th {
-        background-color: #4caf50;
+        background-color: rgb(132, 117, 62);
         color: white;
       }
   
