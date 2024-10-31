@@ -10,20 +10,18 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 4px 0px;
-    
-    
-    .icon {
-        width: 200px;
 
-        h2 {
-            font-size: 40px;
 
-        }
-    }
 
     ul {
         position: relative;
-        right: 300px;
+        right: 150px;
+        display: flex;
+        img {
+          width: 250px;
+          margin-right: 50px;
+          
+        }
 
         li {
             list-style: none;
@@ -48,7 +46,7 @@ nav {
 
     .search {
         position: absolute;
-        right: 13%;
+        right: 8%;
     
         .box {
           height: 40px;
@@ -103,7 +101,7 @@ nav {
     
       .langue {
         position: absolute;
-        right: 10%;
+        right: 5%;
     
         button {
           color: rgb(255, 255, 255);

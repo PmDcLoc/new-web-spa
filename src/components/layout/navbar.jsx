@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import SearchIcon from '@mui/icons-material/Search';
 import LanguageIcon from '@mui/icons-material/Language';
+import logoweb from '../../assets/imaage/logo0.png';
 import '../../style/navbar.scss'
 
 function Navbar() {
@@ -19,10 +20,8 @@ function Navbar() {
     return (
         <nav className={`container ${nab ? 'navb' : ''}`} style={{}} >
 
-            <div className='icon'>
-              <img src=" "></img>
-            </div>
             <ul className='menu'>
+            <div><img src={logoweb} alt="Logo" /></div>
                 <li><NavLink style={({ isActive }) => isActive ? activebar : {}} to='/'>TRANG CHỦ  </NavLink></li>
                 <li><NavLink style={({ isActive }) => isActive ? activebar : {}} to='/about'> DỊCH VỤ </NavLink></li>
                 <li><NavLink style={({ isActive }) => isActive ? activebar : {}} to='/gt'> GIỚI THIỆU</NavLink></li>

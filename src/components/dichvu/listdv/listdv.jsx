@@ -1,6 +1,6 @@
 import './listdv.scss';
 import { useEffect, useState } from 'react';
-import DVCT from '../chitiet/dvct';
+// import DVCT from '../chitiet/dvct';
 import axios from 'axios';
 
 function ListDv() {

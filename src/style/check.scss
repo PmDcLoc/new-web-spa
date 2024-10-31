@@ -39,15 +39,15 @@
     font-weight: 10px;
 
     .farcab {
-        margin-top: 50px;
+        margin-top: 30px;
         width: 100%;
         height: 300px;
-        background-color:    rgb(132, 117, 62);
+        background-color: rgb(165, 149, 91);
         border-radius: 10px;
         position: relative;
-        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 4px 14px rgb(65, 65, 65);
         padding: 20px;
-        color: #f9f9f9;
+        color: #000000;
     
 
         h2 {
@@ -55,16 +55,19 @@
             height: 30px;
             padding-top: 38px;
             margin-left: 45px;
+            font-weight: bold;
         }
 
         .heading {
             margin-left: 100px;
             font-size: 24px;
             margin-bottom: 10px;
+            font-weight: bold;
         }
 
         .tdsdt {
             margin-left: 58px;
+            font-weight: bold;
         }
 
         p {
@@ -72,6 +75,7 @@
             margin-left: 100px;
             font-size: 18px;
             padding-bottom: 20px;
+            font-weight: bold;
         }
 
         .info-table {
@@ -84,12 +88,13 @@
                 border: 1px solid #000000;
                 padding: 10px;
                 text-align: center;
+                background-color: #f0f0f0;
             }
 
             th {
-                background-color: #f0f0f0;
+                background-color: #673200;
                 font-weight: bold;
-                color: black;
+                color: rgb(255, 255, 255);
             }
         }
     }
@@ -98,9 +103,9 @@
         margin-top: 50px;
         width: 100%;
         height: 100px;
-        background-color: rgb(132, 117, 62);
+        background-color: rgb(165, 149, 91);
         border-radius: 10px;
-        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 4px 14px rgb(65, 65, 65);
         
 
         .phone-input {
@@ -108,12 +113,13 @@
             height: 40px;
             font-size: 18px;
             padding: 5px;
-            border: 1px solid #ff8800;
+            border: none;
             border-radius: 5px;
             text-align: center;
             margin-top: 30px;
             margin-left: 100px;
             font-family: 'Poppins', sans-serif;
+            
 
             // Ẩn spinner nếu người dùng đổi sang input type="number"
             &::-webkit-outer-spin-button,
@@ -133,10 +139,10 @@
             height: 40px;
             font-size: 18px;
             padding: 5px;
-            border: 1px solid #ff8800;
+            border: none;
             border-radius: 5px;
             text-align: center;
-
+          
             margin-left: 100px;
         }
 
@@ -147,7 +153,7 @@
             border: none;
             margin-left: 200px;
             margin-top: 30px;
-            background-color: #6d4222;
+            background-color: #ff9d00;
             color: #ffffff;
             font-weight: bold;
 
