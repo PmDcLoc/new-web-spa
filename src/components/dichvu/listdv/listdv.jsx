@@ -5,6 +5,7 @@ import axios from 'axios';
 
 function ListDv() {
     const [dichvulist, setdichvulist] = useState([])
+
     // Tạo trạng thái riêng biệt cho mỗi thẻ dịch vụ
     const [selectedService, setSelectedService] = useState(null);
 
@@ -31,17 +32,17 @@ function ListDv() {
                 <div className="service-card" key={dv.id}>
                     <img src="https://i.pinimg.com/564x/45/2e/97/452e97514fa9d7d0221f74a2b32316d9.jpg" alt="Massage chân" />
                     <div className="service-content">
-                        <h3>{dv.tenDichVu}</h3>
-                        <p>{dv.gia}</p>
+                        <h3> {dv.tenDichVu} </h3>
+                        <p> Giá :{dv.gia} VNĐ</p>
                         <hr />
-                        <p>{dv.moTa}</p>
+
                         <hr />
                         <div className="service-buttons">
                             <button className="btn-call">Gọi ngay</button>
-                            <button className="btn-book" onClick={() => handleToggle('Chân')}>Đặt phòng</button>
+                            <button className="btn-book" onClick={() => handleToggle(dv.id)}>Mô tả</button>
                         </div>
                     </div>
-                    {selectedService === 'Chân' && <DVCT />}
+                    {selectedService === dv.id && <p> Mô tả : {dv.moTa}</p>}
                 </div>
             )
             )}
