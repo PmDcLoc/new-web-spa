@@ -1,19 +1,22 @@
+/* Mặc định cho màn hình lớn */
 .anhnen {
     background-repeat: no-repeat;
-    background-size: contain; /* Giữ nguyên tỷ lệ và toàn bộ ảnh nằm gọn trong vùng */
+    background-size: contain;
     background-position: center;
-    filter:brightness(10px); /* Điều chỉnh độ mờ */
+    filter: brightness(10px);
     width: 100%;
-  height: 313px;
+    height: 313px;
 }
+
 .overlay {
     position: absolute;
     top: 0;
     width: 100%;
     height: 313px;
-    background-color: rgba(70, 46, 30, 0.5); /* Màu nâu (saddle brown) với độ mờ 50% */
-    z-index: 1; /* Đặt lớp phủ lên trên ảnh */
+    background-color: rgba(70, 46, 30, 0.5);
+    z-index: 1;
 }
+
 .td7b {
     margin-top: -100px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -23,9 +26,8 @@
     position: relative;
     z-index: 3;
     margin-left: 30%;
-
-    
 }
+
 .nenct {
     background-color: rgb(117, 85, 64);
     width: 80%;
@@ -33,9 +35,9 @@
     position: relative;
     left: 150px;
     border-radius: 20px;
-    
     top: 10px;
-    
+}
+
 .titleChiTiet {
     text-align: center;
     font-size: 50px;
@@ -43,55 +45,78 @@
     color: #f08080;
 }
 
-.buoc {
+.buoc, .buoc1 {
     display: flex;
     width: 900px;
     margin-left: 5%;
     margin-bottom: 70px;
-    .mota {
-        margin-top: 10px;
-        p{
-            width: 500px;
-            font-size: 20px;
-            margin-top: 20px;
-            color: aliceblue;
-        }
-        .thutu {
+}
 
-            font-weight: 500;
-            font-size: 2vw;
-        }
+.buoc .mota, .buoc1 .mota1 {
+    margin-top: 10px;
+}
+
+.buoc .mota p, .buoc1 .mota1 p {
+    width: 500px;
+    font-size: 20px;
+    margin-top: 20px;
+    color: aliceblue;
+}
+
+.buoc .img img, .buoc1 .img1 img {
+    width: 500px;
+    height: 300px;
+    margin-left: 50px;
+    border-radius: 15px;
+}
+
+/* Media queries cho màn hình nhỏ hơn */
+@media (max-width: 768px) {
+    .td7b {
+        font-size: 30px;
+        margin-left: 10%;
     }
-    .img img{
-        width: 500px;
-        height: 300px;
-        margin-left: 50px;
-        border-radius: 15px;
+
+    .titleChiTiet {
+        font-size: 30px;
+    }
+
+    .buoc, .buoc1 {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .buoc .mota p, .buoc1 .mota1 p {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .buoc .img img, .buoc1 .img1 img {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .nenct {
+        width: 100%;
+        left: 0;
+        border-radius: 10px;
     }
 }
-.buoc1 {
-    display: flex;
-    width: 900px;
-    margin-left: 5%;
-    margin-bottom: 70px;
-    .mota1 {
-        margin-top: 10px;
-        margin-left: 100px;
-        p{
-            width: 500px;
-            font-size: 20px;
-            margin-top: 20px;
-            color: aliceblue;
-        }
-        .thutu1 {
-            font-weight: 500;
-            font-size: 2vw;
-        }
+
+/* Media queries cho màn hình rất nhỏ */
+@media (max-width: 480px) {
+    .td7b {
+        font-size: 20px;
+        margin-left: 5%;
     }
-    .img1 img{
-        width: 500px;
-        height: 300px;
-        border-radius: 15px;
+
+    .titleChiTiet {
+        font-size: 24px;
     }
-}
+
+    .buoc .mota p, .buoc1 .mota1 p {
+        font-size: 14px;
+    }
 }

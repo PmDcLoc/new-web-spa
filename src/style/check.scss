@@ -1,165 +1,97 @@
-.tracuu {
-    background-repeat: no-repeat;
-    background-size: contain;
-    /* Giữ nguyên tỷ lệ và toàn bộ ảnh nằm gọn trong vùng */
-    background-position: center;
-    filter: brightness(10px);
-    /* Điều chỉnh độ mờ */
-    width: 100%;
-  height: 313px;
+/* Container for the entire lookup component */
+.order-lookup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    background-color: #f5f5f5;
 }
 
-.overlaygt {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 313px;
-    background-color: rgba(70, 46, 30, 0.5);
-    /* Màu nâu (saddle brown) với độ mờ 50% */
-    z-index: 1;
-    /* Đặt lớp phủ lên trên ảnh */
+/* Title styling */
+.order-lookup-title {
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 20px;
 }
 
-.tradv {
-    margin-top: -100px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #ffffff;
-    font-size: 50px;
-    font-weight: bold;
+/* Input group for phone input and button */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Wrapper for phone input to include icon */
+.phone-input-wrapper {
     position: relative;
-    z-index: 3;
-    left: 30%;
-
+    display: flex;
+    align-items: center;
+    width: 280px;
 }
 
-.farca {
-    width: 80%;
-    margin-left: 10%;
-    padding-bottom: 50px;
-    font-weight: 10px;
+/* Phone input styling */
+.phone-input {
+    width: 100%;
+    padding: 12px 15px 12px 40px; /* Left padding for the icon */
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    background-color: #f0f0f0;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+}
 
-    .farcab {
-        margin-top: 30px;
-        width: 100%;
-        height: 300px;
-        background-color: rgb(165, 149, 91);
-        border-radius: 10px;
-        position: relative;
-        box-shadow: 0px 4px 14px rgb(65, 65, 65);
-        padding: 20px;
-        color: #000000;
-    
+/* Phone icon styling */
+.phone-icon {
+    position: absolute;
+    left: 15px;
+    font-size: 16px;
+    color: #888;
+}
 
-        h2 {
-            width: 50px;
-            height: 30px;
-            padding-top: 38px;
-            margin-left: 45px;
-            font-weight: bold;
-        }
+/* Search button styling */
+.search-button {
+    width: 120px;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #f9a8a8;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
 
-        .heading {
-            margin-left: 100px;
-            font-size: 24px;
-            margin-bottom: 10px;
-            font-weight: bold;
-        }
+.search-button:hover {
+    background-color: #f38a8a;
+}
+.order-table-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    overflow-x: auto;
+}
 
-        .tdsdt {
-            margin-left: 58px;
-            font-weight: bold;
-        }
+.order-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    margin-top: 20px;
+}
 
-        p {
-            margin-top: -20px;
-            margin-left: 100px;
-            font-size: 18px;
-            padding-bottom: 20px;
-            font-weight: bold;
-        }
+.order-table th,
+.order-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+    color: #555;
+}
 
-        .info-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-
-            th,
-            td {
-                border: 1px solid #000000;
-                padding: 10px;
-                text-align: center;
-                background-color: #f0f0f0;
-            }
-
-            th {
-                background-color: #673200;
-                font-weight: bold;
-                color: rgb(255, 255, 255);
-            }
-        }
-    }
-
-    .farcan {
-        margin-top: 50px;
-        width: 100%;
-        height: 100px;
-        background-color: rgb(165, 149, 91);
-        border-radius: 10px;
-        box-shadow: 0px 4px 14px rgb(65, 65, 65);
-        
-
-        .phone-input {
-            width: 300px;
-            height: 40px;
-            font-size: 18px;
-            padding: 5px;
-            border: none;
-            border-radius: 5px;
-            text-align: center;
-            margin-top: 30px;
-            margin-left: 100px;
-            font-family: 'Poppins', sans-serif;
-            
-
-            // Ẩn spinner nếu người dùng đổi sang input type="number"
-            &::-webkit-outer-spin-button,
-            &::-webkit-inner-spin-button {
-                -webkit-appearance: none;
-                margin: 0;
-            }
-
-            &[type="number"] {
-                appearance: textfield;
-            }
-        }
-
-        .nhapten {
-            font-family: 'Poppins', sans-serif;
-            width: 300px;
-            height: 40px;
-            font-size: 18px;
-            padding: 5px;
-            border: none;
-            border-radius: 5px;
-            text-align: center;
-          
-            margin-left: 100px;
-        }
-
-        button {
-            width: 100px;
-            height: 40px;
-            border-radius: 10px;
-            border: none;
-            margin-left: 200px;
-            margin-top: 30px;
-            background-color: #ff9d00;
-            color: #ffffff;
-            font-weight: bold;
-
-            &:hover {
-                background-color: #ff003c;
-            }
-        }
-    }
+.order-table th {
+    background-color: #f9f9f9;
+    font-weight: bold;
+    color: #666;
 }

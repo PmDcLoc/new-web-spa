@@ -1,6 +1,7 @@
 .banner {
     background-size: cover;
     background-position: center;
+    background-color: navajowhite;
     position: relative;
     display: flex;
     align-items: center;
@@ -11,7 +12,7 @@
         color: white; /* Màu chữ trắng để nổi bật trên nền */
         max-width: 800px;
         padding: 20px;
-        background-color: rgba(0, 0, 0, 0.5); /* Làm mờ nền để dễ đọc chữ */
+        background-color: rgba(156, 109, 86, 0.942); /* Làm mờ nền để dễ đọc chữ */
         border-radius: 10px;
 
         h1 {

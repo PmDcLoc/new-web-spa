@@ -1,144 +1,195 @@
+/* Main navigation styling */
 nav {
-    // background-color: #AF8260;
-    width: 100%;
-    min-height: 100px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 4px 0px;
-
-
-
-    ul {
-        position: relative;
-        right: 150px;
-        display: flex;
-        img {
-          width: 250px;
-          margin-right: 50px;
-          
-        }
-
-        li {
-            list-style: none;
-            display: inline-block;
-            margin: 50px 10px;
-            font-size: 18px;
-            margin-right: 20px;
-            
-            
-
-            a {
-                color: rgb(255, 255, 255);
-                transition: 0.2s;
-                
-            }
-
-            a:hover {
-                color: #ffc74f;
-            }
-        }
-    }
-
-    .search {
-        position: absolute;
-        right: 8%;
-    
-        .box {
-          height: 40px;
-          background-color: rgb(255, 255, 255);
-          border-radius: 40px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-    
-        input {
-          background: none;
-          outline: none;
-          border: none;
-          padding: 0;
-          margin: 0;
-          width: 0px;
-          transition: 0.8s ease;
-          color: rgb(0, 0, 0);
-          font-weight: 600;
-        }
-    
-        input::placeholder {
-          color: rgb(51, 51, 51);
-        }
-    
-        button {
-          color: rgb(0, 0, 0);
-          text-align: center;
-          width: 40px;
-          font-size: 20px;
-          transition: background-color 2s ease;
-          border: none;
-          /* Ẩn viền */
-          background: none;
-    
-    
-        }
-    
-        .box:hover input {
-          width: 200px;
-          margin: 0 20px;
-    
-        }
-    
-        input:focus {
-          width: 200px;
-          margin: 0 20px;
-    
-        }
-      }
-    
-      .langue {
-        position: absolute;
-        right: 5%;
-    
-        button {
-          color: rgb(255, 255, 255);
-          text-align: center;
-          width: 40px;
-          background: none;
-          /* Ẩn nền */
-          border: none;
-          /* Ẩn viền */
-          padding: 0;
-          /* Loại bỏ padding */
-          margin: 0;
-          /* Loại bỏ margin */
-    
-        }
-      }
-
-
-
+  width: 100%;
+  min-height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0;
 }
 
+nav ul {
+  display: flex;
+  align-items: center;
+  position: relative;
+  right: 150px;
+}
+
+nav ul img {
+  width: 250px;
+  margin-right: 50px;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 20px;
+  font-size: 18px;
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+nav ul li a {
+  color: rgb(255, 255, 255);
+  transition: 0.2s;
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+nav ul li a:hover {
+  color: #ffc74f;
+}
+
+/* Search bar styling */
+.search {
+  position: absolute;
+  right: 8%;
+}
+
+.search .box {
+  height: 40px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search input {
+  background: none;
+  outline: none;
+  border: none;
+  width: 0;
+  transition: 0.8s ease;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+}
+
+.search input::placeholder {
+  color: rgb(51, 51, 51);
+}
+
+.search button {
+  color: rgb(0, 0, 0);
+  width: 40px;
+  font-size: 20px;
+  background: none;
+  border: none;
+}
+
+.search .box:hover input,
+.search input:focus {
+  width: 200px;
+  margin: 0 20px;
+}
+
+/* Language selector styling */
+.langue {
+  position: absolute;
+  right: 5%;
+}
+
+.langue button {
+  color: rgb(255, 255, 255);
+  background: none;
+  border: none;
+}
+
+/* Container padding */
 .container {
-    padding-left: 15%;
-    padding-right: 15%;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
+/* Navbar background */
 .navb {
-    background-color: #321d0c;
-    transition: 0.2s;
-  
+  background-color: #ad9077;
+  transition: 0.2s;
 }
-
 
 .navb a {
+  transition: 0.2s;
+  color: #ffffff;
+  border: none;
+}
 
-    transition: 0.2s;
-    color: #ffffff;
-    border: none;
+/* Responsive styling */
+@media (max-width: 992px) {
+  /* Adjust layout for tablet */
+  nav ul {
+      position: relative;
+      right: 0;
+      margin-left: 20px;
+  }
 
+  .search {
+      right: 10%;
+  }
+
+  .langue {
+      right: 3%;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Adjust layout for mobile */
+  nav {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+  }
+
+  nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+      position: static;
+      margin: 0;
+  }
+
+  nav ul img {
+      width: 180px; /* Smaller logo */
+      margin-bottom: 10px;
+  }
+
+  nav ul li {
+      margin: 10px 0;
+      font-size: 16px;
+      white-space: nowrap;
+  }
+
+  .search {
+      right: 0;
+      width: 100%;
+      padding: 10px 0;
+  }
+
+  .search .box {
+      width: 100%;
+      padding: 0 10px;
+  }
+
+  .langue {
+      right: 0;
+      width: 100%;
+      padding: 10px 0;
+      text-align: right;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Extra small screens adjustments */
+  nav ul img {
+      width: 150px;
+  }
+
+  nav ul li {
+      font-size: 14px;
+      white-space: nowrap;
+  }
+
+  .search .box:hover input,
+  .search input:focus {
+      width: 150px;
+  }
 }

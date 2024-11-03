@@ -16,11 +16,11 @@ function About() {
                 <h2> Sun Spa - Khám Phá  </h2>
             </div>
             <div className="main_about" data-aos="fade-left">
-                <img src={about} alt="" className='ig1'/>
+                <img src={about} alt="" className='ig1' />
                 <div className="about1">
-                    <h2> Quay Lại Với Sun Spa</h2>
-                    <p>Với hơn 15 năm kinh nghiệm làm việc và giảng dạy trong lĩnh vực massage tại Thành phố Hồ Chí Minh.<br/>
-                        Đến với dịch vụ Massage Đà Nẵng bằng sự nhiệt huyết và đội ngũ kỹ thuật viên lành nghề, chúng tôi đã và đang nhận được rất nhiều sự hài lòng từ nhiều khách hàng.<br/>
+                    <h2> QUAY LẠI VỚI SUN SPA</h2>
+                    <p>Với hơn 15 năm kinh nghiệm làm việc và giảng dạy trong lĩnh vực massage tại Thành phố Hồ Chí Minh.<br />
+                        Đến với dịch vụ Massage Đà Nẵng bằng sự nhiệt huyết và đội ngũ kỹ thuật viên lành nghề, chúng tôi đã và đang nhận được rất nhiều sự hài lòng từ nhiều khách hàng.<br />
                         Chúng tôi cam kết mang lại giá trị thực sự cho bạn</p>
                     <div className="icon"><CheckCircleOutlineRoundedIcon color="success" sx={{ fontSize: 30 }} /> <p>Cơ sở vật chất hiện đại và tiện nghi</p></div>
                     <div className="icon"><CheckCircleOutlineRoundedIcon color="success" sx={{ fontSize: 30 }} /><p> Đội ngũ nhân viên giàu kinh nghiệm</p></div>
@@ -38,7 +38,29 @@ function About() {
                     <div className="icon"><CheckCircleOutlineRoundedIcon color="success" sx={{ fontSize: 30 }} /><p>Hương thơm tinh dầu thiên nhiên</p></div>
                     <div className="icon"><CheckCircleOutlineRoundedIcon color="success" sx={{ fontSize: 30 }} /><p>Liệu pháp massage chuyên nghiệp</p></div>
                 </div>
-                <img src={about1} alt="" className='ig2'/>
+                <img src={about1} alt="" className='ig2' />
+            </div>
+            <div className="customer-reviews">
+                <h2>Đánh giá của khách hàng</h2>
+                <div className="reviews">
+                    <div className="review-card">
+                        <img src="https://images2.thanhnien.vn/528068263637045248/2023/4/27/c0309030-1682593558087535464110.jpg" alt="Customer 1" className="review-image" />
+                        <div className="review-content">
+                            <h3>Nghệ sĩ hài Anh Đức</h3>
+                            <p>⭐⭐⭐⭐⭐</p>
+                            <p>Dịch vụ tuyệt vời, nhân viên không những xinh mà còn thân thiện, vui tính. Không gian rộng rãi, đẳng cấp 5 sao. Mình sẽ quay trở lại sử dụng dịch vụ tại Cham.</p>
+                        </div>
+                    </div>
+                    <div className="review-card">
+                        <img src="https://cdn.alongwalk.info/vn/wp-content/uploads/2023/05/11095512/top-10-kieu-toc-hieuthuhai-dep-duoc-yeu-thich-nhat1683748512.jpg" alt="Customer 2" className="review-image" />
+                        <div className="review-content">
+                            <h3>Ca sĩ Hiếu Thứ Hai</h3>
+                            <p>⭐⭐⭐⭐⭐</p>
+                            <p>Bài thuốc tắm lá người Dao đỏ chính là dịch vụ ấn tượng nhất. Ngâm mình cảm giác như đang lạc vào núi rừng Sa Pa. Thật sự ai cũng nên thử một lần để biết được dịch vụ ở đây tuyệt vời đến mức nào!</p>
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
         </div>
     )

@@ -17,7 +17,7 @@ function Hero() {
 
         <div className='hero'>
             <div className='text_hero' data-aos='fade-right'>
-                <h2> Dịch Vụ Nổi Bật </h2>
+                <h2> DỊCH VỤ NỔI BẬT </h2>
             </div>
 
             <div className='main'>

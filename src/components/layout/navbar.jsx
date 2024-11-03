@@ -21,7 +21,7 @@ function Navbar() {
         <nav className={`container ${nab ? 'navb' : ''}`} style={{}} >
 
             <ul className='menu'>
-            <div><img src={logoweb} alt="Logo" /></div>
+                <div><img src={logoweb} alt="Logo" /></div>
                 <li><NavLink style={({ isActive }) => isActive ? activebar : {}} to='/'>TRANG CHỦ  </NavLink></li>
                 <li><NavLink style={({ isActive }) => isActive ? activebar : {}} to='/about'> DỊCH VỤ </NavLink></li>
                 <li><NavLink style={({ isActive }) => isActive ? activebar : {}} to='/gt'> GIỚI THIỆU</NavLink></li>
@@ -29,16 +29,18 @@ function Navbar() {
                 <li><NavLink style={({ isActive }) => isActive ? activebar : {}} to='/contact'>LIÊN HỆ</NavLink></li>
                 <li><NavLink style={({ isActive }) => isActive ? activebar : {}} to='/check'>TRA CỨU</NavLink></li>
             </ul>
-            <div className="search">
-                <div className="box">
-                    <input type="text" placeholder="Tìm kiếm" />
-                    <button><SearchIcon /></button>
+            <div className="" style={{display: "flex", marginTop: "-30px"}}>
+                <div className="search" style={{marginRight: '90px'}}>
+                    <div className="box">
+                        <input type="text" placeholder="Tìm kiếm" />
+                        <button><SearchIcon /></button>
+                    </div>
+                </div>
+
+                <div className="langue" style={{marginTop: "-10px"}}>
+                    <button><LanguageIcon /></button>
                 </div>
             </div>
-            <div className="langue">
-                <button><LanguageIcon /></button>
-            </div>
-
         </nav >
     )
 }

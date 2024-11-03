@@ -1,169 +1,140 @@
-.lienhee {
-  background-repeat: no-repeat;
-  background-size: contain;
-  /* Giữ nguyên tỷ lệ và toàn bộ ảnh nằm gọn trong vùng */
-  background-position: center;
-  filter: brightness(10px);
-  width: 100%;
-  height: 313px;
-  /* Điều chỉnh độ mờ */
-}
-
-.overlaygt {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 313px;
-  background-color: rgba(70, 46, 30, 0.5);
-  /* Màu nâu (saddle brown) với độ mờ 50% */
-  z-index: 1;
-  /* Đặt lớp phủ lên trên ảnh */
-}
-.lien {
-  margin-top: -100px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  color: #ffffff;
-  font-size: 50px;
-  font-weight: bold;
-  position: relative;
-  z-index: 3;
-  left: 38%;
-  
-}
-.bokg {
-  background-color: rgb(165, 149, 91);
-  width: 100%;
-}
 .contact-booking-container {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    font-family: 'Arial', sans-serif;
-    background-color: #fdfdfd;
-    width: 70%;
-    margin-left: 15%;
-    margin-top: 50PX;
-  
-    .contact-section {
-      flex: 1;
-      padding: 20px;
-      border-right: 2px solid #ececec;
-  
-      h2 {
-        font-size: 2rem;
-        margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+.all-lienhe {
+  margin-left: -30%;
+  border: 0.5px solid #f4f3dd;
+  border-radius: 10px;
+  .img-lienhe img {
+    width: 612px;
+    margin-left: -100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
+  .booking-section {
+    background: #d6d0c7;
+    padding: 30px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    h2 {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+    
+
+    .form-group {
+      margin-bottom: 15px;
+      
+      label {
+        font-size: 14px;
+        color: #333;
+        display: block;
+        margin-bottom: 5px;
+        
       }
-  
-      h3 {
-        color: #655130;
-        font-size: 1.5rem;
-        margin-bottom: 10px;
+
+      input, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #afac90;
+        border-radius: 5px;
+        font-size: 14px;
       }
-  
-      p {
-        font-size: 1rem;
-        margin: 5px 0;
-      }
-  
-      .social-media {
-        margin-top: 20px;
-  
-        h4 {
-          font-size: 1.2rem;
-          margin-bottom: 10px;
-        }
-  
-        .social-icons {
-          i {
-            font-size: 1.5rem;
-            margin-right: 15px;
-            cursor: pointer;
-            transition: color 0.3s;
-  
-            &:hover {
-              color: #d0b07d;
-            }
-          }
-        }
+
+      input::placeholder, textarea::placeholder {
+        color: #aaa;
       }
     }
-  
-    .booking-section {
-      flex: 1.5;
-      padding: 20px;
-  
-      h2 {
-        font-size: 2rem;
-        margin-bottom: 20px;
-      }
-  
-      form {
-        .form-group {
-          margin-bottom: 15px;
-  
-          label {
-            display: block;
-            font-size: 1rem;
-            margin-bottom: 5px;
-  
-            i {
-              margin-right: 8px;
-            }
-          }
-  
-          input,
-          textarea {
-            width: 100%;
-            padding: 10px;
-            font-size: 1rem;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-          }
-  
-          textarea {
-            resize: none;
-          }
-        }
-  
-        .menu-options,
-        .time-options {
-          margin-bottom: 20px;
-  
-          p {
-            font-size: 1.1rem;
-            margin-bottom: 10px;
-          }
-  
-          .checkbox-group {
-            display: flex;
-            justify-content: space-between;
-  
-            label {
-              font-size: 1rem;
-              margin-right: 10px;
-  
-              input {
-                margin-right: 5px;
-              }
-            }
-          }
-        }
-  
-        .booking-btn {
-          background-color: #4d3c20;
-          color: white;
-          font-size: 1.1rem;
-          padding: 10px 20px;
-          border: none;
-          border-radius: 5px;
-          cursor: pointer;
-          transition: background-color 0.3s;
-  
-          &:hover {
-            background-color: #e5941e;
-          }
-        }
+
+    .booking-btn {
+      background-color: #9a5727; // Adjust to match the exact brown in the image
+      color: #fafccb;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      width: 100%;
+      max-width: 250px;
+      margin-top: 15px;
+      text-transform: uppercase;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #7a3e12;
       }
     }
   }
+}
+.customer-reviews {
+  text-align: center;
+  margin-top: 50px;
+  h2 {
+    font-size: 24px;
+    color: #5b8def;
+    margin-bottom: 20px;
+  }
+
+  .reviews {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
   
+
+  .review-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    gap: 15px;
+
+    .review-image {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .review-content {
+      h3 {
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 5px;
+      }
+
+      p {
+        font-size: 14px;
+        color: #666;
+        margin: 5px 0;
+      }
+
+      p:first-of-type {
+        font-size: 16px;
+        color: #e3a008;
+        margin: 0;
+      }
+    }
+  }
+}
+
+

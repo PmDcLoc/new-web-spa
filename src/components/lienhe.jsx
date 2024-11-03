@@ -1,114 +1,90 @@
 import lienh from '../assets/imaage/nenanh.jpg';
-import  { useEffect } from 'react';
+import { useEffect } from 'react';
 import '../style/lienhe.scss';
-// import MapComponent from './views/MapComponent';
+
 const ContactBooking = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
-}, []);
+  }, []);
+
   return (
     <>
-      <img src={lienh} alt="" className='lienhee' />
-      <div className="overlaygt"></div>
-      <h1 className='lien'>ĐẶT LỊCH NGAY</h1>
-      <div className="contact-booking-container">
-        {/* <div className="contact-section">
-          <h2>CONTACT</h2>
-          <h3>SUN SPA</h3>
-          <p>Địa chỉ: 269 Núi Thành, Hòa Cường Bắc, Hải Châu, Đà Nẵng, Việt Nam</p>
-          <p>Hotline: 0799019899</p>
-          <p>Email: chuaspa@gmail.com</p>
 
-          <div className="social-media">
-            <h4>FOLLOW US AT</h4>
-            <div className="social-icons">
-              <i className="fab fa-facebook-f"></i>
-              <i className="fab fa-instagram"></i>
-              <i className="fab fa-twitter"></i>
-              <i className="fas fa-envelope"></i>
+<img src={lienh} alt="" className='anhnen' />
+<div className="overlay"></div>
+      <div className="contact-booking-container">
+        <div className="contact-details">
+          <h1>SUN SPA & MASSAGE</h1>
+        </div>
+        <div className='all-lienhe' style={{ display: 'flex' }}>
+          <div className="infor">
+            <div className="booking-section">
+              <h2>BOOKING</h2>
+              <p>Để chúng tôi hỗ trợ tốt nhất đến với quý khách, vui lòng liên hệ ngay!</p>
+              <form>
+                <div className="form-group">
+                  <label>Họ và tên *</label>
+                  <input type="text" required />
+                </div>
+
+                <div className="form-group">
+                  <label>Số điện thoại *</label>
+                  <input type="text" required />
+                </div>
+
+                <div className="form-group">
+                  <label>Email của bạn</label>
+                  <input type="email" />
+                </div>
+                <div className="form-group">
+                  <label>Ngày và Giờ  </label>
+                  <input type="email" />
+                </div>
+                <div className="form-group">
+                  <label>Bạn đi bao nhiêu người?</label>
+                  <select required>
+                    <option value="">Chọn số người</option>
+                    <option value="1">1 người</option>
+                    <option value="2">2 người</option>
+                    <option value="3">3 người</option>
+                    <option value="4">4 người</option>
+                    <option value="5">5 người</option>
+                    <option value="6+">Trên 5 người</option>
+                  </select>
+                </div>
+
+                <div className="form-group">
+                  <label>Bạn muốn làm dịch vụ gì?</label>
+                  <select required>
+                    <option value="">Chọn dịch vụ</option>
+                    <option value="massage">Massage</option>
+                    <option value="spa">Spa</option>
+                    <option value="facial">Chăm sóc da mặt</option>
+                    <option value="manicure">Làm móng</option>
+                    <option value="pedicure">Chăm sóc chân</option>
+                  </select>
+                </div>
+                <div className="form-group">
+                  <label> Bạn muốn thư giản trong bao lâu? </label>
+                  <select required>
+                    <option value="">Chọn dịch vụ</option>
+                    <option value="massage">30p</option>
+                    <option value="spa">60p</option>
+                    <option value="facial">90p</option>
+                    <option value="manicure">120p</option>
+                   
+                  </select>
+                </div>
+                <button type="submit" className="booking-btn">Thử gửi ngay</button>
+              </form>
             </div>
           </div>
-          <MapComponent />
-        </div> */}
-
-        <div className='bokg'>
-        <div className="booking-section">
-          <h2>Điền thông tin</h2>
-          <form>
-            <div className="form-group">
-              <label>
-                <i className="fas fa-user"></i>
-                Full name *
-              </label>
-              <input type="text" required />
-            </div>
-
-            <div className="form-group">
-              <label>
-                <i className="fas fa-phone"></i>
-                Phone number *
-              </label>
-              <input type="text" required />
-            </div>
-
-            <div className="form-group">
-              <label>
-                <i className="fas fa-envelope"></i>
-                Email
-              </label>
-              <input type="email" />
-            </div>
-
-            <div className="form-group">
-              <label>
-                <i className="fas fa-calendar"></i>
-                Select date and time
-              </label>
-              <input type="datetime-local" />
-            </div>
-
-            <div className="menu-options">
-              <p>Menu</p>
-              <div className="checkbox-group">
-                <label><input type="checkbox" /> NECK & SHOULDER</label>
-                <label><input type="checkbox" /> BODY</label>
-                <label><input type="checkbox" /> AROMA</label>
-                <label><input type="checkbox" /> THAI</label>
-                <label><input type="checkbox" /> FOOT</label>
-              </div>
-            </div>
-
-            <div className="time-options">
-              <p>Thời gian</p>
-              <div className="checkbox-group">
-                <label><input type="radio" name="time" /> 60 minutes</label>
-                <label><input type="radio" name="time" /> 90 minutes</label>
-                <label><input type="radio" name="time" /> 120 minutes</label>
-              </div>
-            </div>
-
-            <div className="form-group">
-              <label>
-                <i className="fas fa-users"></i>
-                How many people are you going?
-              </label>
-              <input type="number" />
-            </div>
-
-            <div className="form-group">
-              <label>
-                <i className="fas fa-comments"></i>
-                Other requirements
-              </label>
-              <textarea rows="3"></textarea>
-            </div>
-
-            <button type="submit" className="booking-btn">Đặt ngay</button>
-          </form>
+          <div className="img-lienhe" style={{ width: '100px' }}>
+            <img src="https://i.pinimg.com/564x/06/84/34/06843423e0dd6ec70af188fcce85e4ad.jpg" alt="" />
+          </div>
         </div>
-        </div>
+      
       </div>
-
     </>
   );
 };

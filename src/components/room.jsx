@@ -12,6 +12,7 @@ const Room = () => {
     'https://nhadep.pro.vn/wp-content/uploads/2022/01/mau-spa-goi-dau-duong-sinh-thu-gian.jpg',
     'https://www.deco-crystal.com/wp-content/uploads/2022/12/image13-1.jpg',
     'https://cdn.diemnhangroup.com/noithatdiemnhan/2023/11/cong-ty-chuyen-thiet-ke-spa-2.jpeg',
+    
     'https://kientruc.vn/wp-content/uploads/2022/11/cong-ty-thiet-ke-spa-o-ha-noi-2.jpg',
     'https://inhousedesign.vn/wp-content/uploads/2021/06/xac-dinh-bo-cuc-noi-that-1-e1630886159938.jpg',
     'https://maihanspa.com/ino_upload/source/50%20mau%20spa/spa%20mini%20tai%20nha.jpg',

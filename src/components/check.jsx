@@ -1,48 +1,16 @@
-import trac from '../assets/imaage/nenanh.jpg';
-import { useState } from 'react';
-import  { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import '../style/check.scss';
-// import MapComponent from './views/MapComponent';
+import nenanh from '../assets/imaage/anhnen.jpg'
+
 const Checkservect = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
-    const data = [
-        {
-            user: "Lò Vanh Nhật",
-            sdt: "012345678910",
-            lichSuDat: [
-                {
-                    ngayThangNam: "2024-10-20",
-                    soNguoi: 2,
-                    soDichVu: 3,
-                    ngayDat: "2024-10-18",
-                    trangThai: "Hoàn thành",
-                    tongSoTien: "500,000 VNĐ",
-                    thanhToan: "Đã thanh toán tiền mặt",
-                    hoiVien: "Có",
-                },
-                {
-                    ngayThangNam: "2024-09-15",
-                    soNguoi: 1,
-                    soDichVu: 2,
-                    ngayDat: "2024-09-13",
-                    trangThai: "Đã hủy",
-                    tongSoTien: "không thanh toán",
-                    thanhToan: "X",
-                    hoiVien: "có",
-                },
-            ],
-        },
-    ];
-
-    //----------------------------
 
     const [phone, setPhone] = useState('');
 
     const handleChange = (e) => {
         const input = e.target.value;
-        // Chỉ cho phép nhập số và giới hạn tối đa 10-11 ký tự
         if (/^\d*$/.test(input) && input.length <= 11) {
             setPhone(input);
         }
@@ -50,67 +18,61 @@ const Checkservect = () => {
 
     return (
         <>
-            <img src={trac} alt="" className='tracuu' />
-            <div className="overlaygt"></div>
-            <h1 className='tradv'>XEM DỊCH VỤ ĐÃ SỬ DỤNG</h1>
-
-            <div className='farca'>
-                <div className='farcan'>
-                    <input
-                        type="text"
-                        id="phoneInput"
-                        className="phone-input"
-                        value={phone}
-                        onChange={handleChange}
-                        placeholder="Nhập số điện thoại"
-                    />
-                    <input type="text" className='nhapten' placeholder='Nhập họ và tên' />
-                    <button>TRA CỨU</button>
+                 <img src={nenanh} alt="" className="anhnen" />
+            <div className="overlay"></div>
+            <div className="order-lookup-container">
+                <h1 className="order-lookup-title">Tra cứu đơn hàng</h1>
+                <div className="input-group">
+                    <div className="phone-input-wrapper">
+                        <span className="phone-icon">📞</span>
+                        <input
+                            type="text"
+                            className="phone-input"
+                            value={phone}
+                            onChange={handleChange}
+                            placeholder="Nhập số điện thoại"
+                        />
+                    </div>
+                    <button className="search-button">Tìm kiếm</button>
                 </div>
-                <div className="farcab">
-                    <h2>Anh:</h2>
-                    {data.map((item, index) => (
-                        <h1 key={index} className="heading">{item.user}</h1>
-                    ))}
-
-                    <strong className="tdsdt">SĐT:</strong>
-                    {data.map((item, index) => (
-                        <p key={index}>{item.sdt}</p>
-                    ))}
-
-                    <table className="info-table">
-                        <thead>
-                            <tr>
-                                <th>Ngày Tháng Năm</th>
-                                <th>Số Người</th>
-                                <th>Số Dịch Vụ</th>
-                                <th>Ngày Đặt</th>
-                                <th>Trạng Thái</th>
-                                <th>Tổng Số Tiền</th>
-                                <th>Thanh Toán</th>
-                                <th>Hội Viên</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {data.map((item) =>
-                                item.lichSuDat.map((order, index) => (
-                                    <tr key={index}>
-                                        <td>{order.ngayThangNam}</td>
-                                        <td>{order.soNguoi}</td>
-                                        <td>{order.soDichVu}</td>
-                                        <td>{order.ngayDat}</td>
-                                        <td>{order.trangThai}</td>
-                                        <td>{order.tongSoTien}</td>
-                                        <td>{order.thanhToan}</td>
-                                        <td>{order.hoiVien}</td>
-                                    </tr>
-                                ))
-                            )}
-                        </tbody>
-                    </table>
-                </div>
-
-
+            </div>
+            <div className="order-table-container">
+                <table className="order-table">
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Tên</th>
+                            <th>SDT</th>
+                            <th>Dịch vụ</th>
+                            <th>Ngày hẹn</th>
+                            <th>Giá tiền</th>
+                        </tr>
+                    </thead>
+                    <thead>
+                        <tr>
+                            <th>1</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <thead>
+                        <tr>
+                            <th>2</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                   
+                    <tbody>
+                        {/* Add table rows here */}
+                    </tbody>
+                </table>
             </div>
         </>
     );
